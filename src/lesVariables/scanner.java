@@ -1,9 +1,12 @@
+//10/04/2026
+package lesVariables;
+
 import java.util.Scanner;
 
-public class Exercice3 {
+public class scanner {
 
     public static void main(String[] args){
-        //Exercise 3
+        //Exercise 3 : utilisation du scanner
         System.out.println("Exercise 3 : Utilisation du scanner");
 
         Scanner scanner = new Scanner(System.in);
