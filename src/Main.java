@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args){
 
-        // Exercise 1
+        // 10/04/2026 Exercise 1
         System.out.println("Exercise 1 : Les string ");
         String montagne = "Everest";
         int hauteur = 1500;
