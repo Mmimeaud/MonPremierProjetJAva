@@ -7,7 +7,7 @@ public class conditionnelle {
 public static void main(String[] args){
 
     // Exercice 8  les condition avec if
-    Scanner scanner = new Scanner(System.in);
+   /* Scanner scanner = new Scanner(System.in);
     System.out.print("Nom de la montagne 1 ");
     String montagne = scanner.next();
 
@@ -76,7 +76,7 @@ public static void main(String[] args){
             System.out.println("La montagne 3 est la plus grande ");
 
         }
-    scanner.close();
+    scanner.close();*/
     }
 }
 
