@@ -1,6 +1,4 @@
-package lesStructure;
-
-import java.util.Scanner;
+package lesStructures;
 
 public class conditionnelle {
 

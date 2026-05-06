@@ -1,4 +1,4 @@
-package lesStructure;
+package lesStructures;
 
 import java.util.Scanner;
 
@@ -63,15 +63,16 @@ public class While {
 
     }*/
          // Exercice 14 Do ... While
-        System.out.println("Saisir un nombre entre 0-50 : ");
+        System.out.println("Saisir un nombre entre 0-100 : ");
         int nbreDevine = scanner.nextInt();
         int compteur =  0 ;
         int nbreOrdi ;
 
-        int tentativeMax = 0;
-        int tentativeMin = 99 ;
+        int tentativeMax = 99;
+        int tentativeMin = 0 ;
 
         do {
+            // Pour que l'entier proposé prenne en compte les indications
             nbreOrdi = (int) (Math.random() * (tentativeMax - tentativeMin + 1) + tentativeMin);
             System.out.println("L'ordinateur tente  " + nbreOrdi);
             compteur ++;
@@ -80,17 +81,11 @@ public class While {
 
             } else if (nbreOrdi < nbreDevine) {
                 System.out.println("C'est trop petit  ");
-                tentativeMin = nbreOrdi;
+                tentativeMin = nbreOrdi + 1 ;
             }else {
-                System.out.println("C'est trop grand "); }
-                tentativeMax = nbreOrdi;
-        } while(nbreDevine != nbreOrdi);
-
-
-
-
-
-
+                System.out.println("C'est trop grand ");
+                tentativeMax = nbreOrdi - 1;
+            }}while(nbreDevine != nbreOrdi);
 
 
        scanner.close();
