@@ -47,7 +47,7 @@ public class Tableaux {
 
 }}*/
 
-    // Exercixce tableau a deux dimension
+    // Exercice tableau à deux dimensions
 
         int[][] tableau = new int[6][4];
 // Remplir
