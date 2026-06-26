@@ -1,7 +1,6 @@
 // SECTION 7 : Présensation de la POO
 package POO;
 // classe terrain qui définit un terrain
-//
 public class Terrain {
     // définition des attributs de la classe pour réprésenter ce qu'est un terrain
     int largeur;
@@ -34,7 +33,6 @@ public class Terrain {
         } else {
             return false;
         }
-
     }
 
 }

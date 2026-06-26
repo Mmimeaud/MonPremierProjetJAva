@@ -40,7 +40,7 @@ public class Logement {
 
         // etape 4 Methode pour dire se fait Logement, comme elles sont dans ma déclaration de class, je peux utiliser directement des attribut sans passer ar les getter
         public void afficher(){
-            System.out.println(" Le logement " + nom + "est situé " + adresse);
+            System.out.println(" Le logement " + this.nom + "est situé " + adresse);
             System.out.println("La superficie est de " + superficie);
         }
     }
