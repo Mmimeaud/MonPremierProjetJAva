@@ -32,7 +32,7 @@ public class Personne {
     /**
      * Methode qui permet d'afficher les infos sur clients
      */
-    void afficher(){
+    public  void afficherClient(){
     System.out.println(nom +"  " + prenom +"   (" + age + " ans )");
 }
 }

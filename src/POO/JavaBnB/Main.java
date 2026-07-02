@@ -2,7 +2,11 @@ package POO.JavaBnB;
 
 import POO.JavaBnB.logements.Batiment;
 import POO.JavaBnB.logements.Logement;
+import POO.JavaBnB.reservations.Sejour;
 import POO.JavaBnB.utilisateurs.Personne;
+
+import java.time.LocalDate;
+import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
@@ -28,14 +32,23 @@ public class Main {
         Batiment batiment2;
         Batiment batiment3;
 
+        LocalDate date1 = LocalDate.of(2026,7,15);
+
+        Sejour sejour1;
+
+
+
+
         batiment1 = new Batiment(20,"location","C");
         batiment2 = new Batiment(5,"AirBnb","B");
         batiment3 = new Batiment(10, "location", "A");
 
 
-        logement1 = new Logement("Les Hirondelles", 50, "157 Boulevard de la Liberté, Lille", 70, 5,batiment1);
-        logement2 = new Logement("Les Pies", 150, "39 Boulevard de Thouars, Bordeaux", 200, 15, batiment2);
-        logement3 = new Logement("Les Colombes", 30, "7 rue de la chaume, Jonzac", 25, 2, batiment3);
+        logement1 = new Logement("Les Hirondelles", 50, "157 Boulevard de la Liberté, Lille", 70, 5,batiment1, client1);
+        logement2 = new Logement("Les Pies", 150, "39 Boulevard de Thouars, Bordeaux", 200, 15, batiment2, client2);
+        logement3 = new Logement("Les Colombes", 30, "7 rue de la chaume, Jonzac", 25, 2, batiment3, client3);
+
+        sejour1 = new Sejour(date1,3,logement2,5);
 
  // utilisation du setter sur Batiment
         batiment1.SetAgeBati(17);
@@ -43,6 +56,7 @@ public class Main {
         logement1.afficher();
       //  logement2.afficher();
       //  logement3.afficher();
+        sejour1.afficherSejour();
 
 
         // Utilisaton du getter
