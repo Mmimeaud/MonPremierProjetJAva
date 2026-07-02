@@ -1,5 +1,5 @@
 // SECTION 7 : Présensation de la POO
-package POO;
+package POO.Exo1;
 // classe terrain qui définit un terrain
 public class Terrain {
     // définition des attributs de la classe pour réprésenter ce qu'est un terrain

@@ -1,7 +1,7 @@
 /**
  * class Personne qui définit une personne
  */
-package POO.JavaBnB;
+package POO.JavaBnB.utilisateurs;
 
 public class Personne {
     /**
