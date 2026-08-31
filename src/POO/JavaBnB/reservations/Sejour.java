@@ -16,6 +16,8 @@ public class Sejour {
     private Logement logement;
     private int nbVoyageurs;
 
+
+
     // Etape 2 Constructeur + initialisation
 
     public Sejour (LocalDate dateArrivee,  int nbNuits, Logement logement, int nbVoyageurs){
@@ -36,6 +38,7 @@ public class Sejour {
 
 
     public void afficherSejour(){
+
         /**
          *  Changer le format de la date ENG en FR, methode mise dans la classe Utiles par la suite
           */
@@ -51,4 +54,5 @@ public class Sejour {
         System.out.println(" Test methode Utiles :  Le prix total de ce séjour est de " + Utiles.montantTotal(nbNuits,logement.getTarifParNuit()) + "€");
 
     }
+
 }

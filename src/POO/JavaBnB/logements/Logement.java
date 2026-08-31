@@ -1,8 +1,12 @@
 package POO.JavaBnB.logements;
 
+import POO.JavaBnB.outils.Utiles;
 import POO.JavaBnB.utilisateurs.Personne;
 
 public class Logement {
+
+
+
     //  Etape 1 Déclaration des attributs (de quoi est fait mon Logement)
         private String nom ;
         private int tarifParNuit ;
@@ -11,6 +15,7 @@ public class Logement {
         private int nbVoyageursMax;
         private Batiment batiment;// Insertion de la classe batiment
         private Personne hote;
+
 
         // Etape 2 LE CONSTRUCTEUR :  j'ajoute une valeur à mes attributs : initialisation
         public Logement (String nom, int tarifParNuit, String adresse, int superficie, int nbVoyageursMax, Batiment batiment, Personne hote) {
@@ -54,6 +59,8 @@ public class Logement {
             return hote;
     }
 
+
+
     // etape 4 Methode pour dire se fait Logement, comme elles sont dans ma déclaration de class, je peux utiliser directement des attribut sans passer ar les getter
         public void afficher(){
             System.out.print("Nom du client :");
@@ -65,6 +72,9 @@ public class Logement {
 
 
         }
+
+
+
     }
 
 
