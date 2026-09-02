@@ -10,18 +10,19 @@ import java.time.LocalDate;
  Java recrée un nouvel objet DateTimeFormatter en analysant le pattern "dd/MM/yyyy" depuis zéro.
 Si tu appelles cette méthode 1000 fois (par exemple pour formater une liste de réservations),
 Java refait ce travail 1000 fois, alors que le résultat est toujours identique.
-Donc extrait le DateTimeFormatter en constante statique pour éviter de le recréer à chaque appel*/
+Donc extrait le DateTimeFormatter en constante (utilisation de Final)  statique pour éviter de le recréer à chaque appel*/
 
 public class Utiles {
     /* Constructeur Utiles */
     private Utiles(){}
+    private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
  /**
   * Methode pour formater une date au format Fr.
  * @param date = date d'arrivée des voyageurs
  * @return  la date au format JJ/MM/AAAA
  * */
     public static String formaterDate(LocalDate date){
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
         return date.format(formatter);
     }
     /**

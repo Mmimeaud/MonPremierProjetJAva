@@ -1,7 +1,9 @@
 package POO.JavaBnB;
 
 import POO.JavaBnB.logements.Batiment;
+import POO.JavaBnB.logements.ClasseEnergie;
 import POO.JavaBnB.logements.Logement;
+import POO.JavaBnB.logements.TypeBatiment;
 import POO.JavaBnB.reservations.Sejour;
 import POO.JavaBnB.utilisateurs.Personne;
 
@@ -39,9 +41,9 @@ public class Main {
 
 
 
-        batiment1 = new Batiment(20,"location","C");
-        batiment2 = new Batiment(5,"AirBnb","B");
-        batiment3 = new Batiment(10, "location", "A");
+        batiment1 = new Batiment(20, TypeBatiment.IMMEUBLE, ClasseEnergie.B);
+        batiment2 = new Batiment(5,TypeBatiment.COMMERCE,ClasseEnergie.A);
+        batiment3 = new Batiment(10, TypeBatiment.HABITATION, ClasseEnergie.D);
 
 
         logement1 = new Logement("Les Hirondelles", 50, "157 Boulevard de la Liberté, Lille", 70, 5,batiment1, client1);
@@ -51,16 +53,21 @@ public class Main {
         sejour1 = new Sejour(date1,3,logement2,5);
 
  // utilisation du setter sur Batiment
-        batiment1.SetAgeBati(17);
+        System.out.println("Test getter " + batiment1.getType());
+        System.out.println("Test getter " + batiment1.getType().getNom());
+        System.out.println("Test getter energie " + batiment1.getClassEnergie());
+        //batiment1.SetAgeBati(17);
+        batiment1.afficherBati();
 
-        logement1.afficher();
+      //  logement1.afficher();
       //  logement2.afficher();
       //  logement3.afficher();
-        sejour1.afficherSejour();
+     //   sejour1.afficherSejour();
 
 
         // Utilisaton du getter
         System.out.println("Test getter " + logement3.getNom());
+
 
 
     }
