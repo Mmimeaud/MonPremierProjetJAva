@@ -55,6 +55,7 @@ public class Logement {
         return batiment;
     }
 
+    // hote est objet de la class Personne, donc ce getter renverra un objet et non une variable de type primitif .
     public Personne getHote(){
             return hote;
     }

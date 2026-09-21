@@ -21,9 +21,7 @@ public class Main {
         client2 = new Personne("charles", "Martell", 45);
         client3 = new Personne("Edith", "Piaf", 50);
 
-       // client1.afficher();
-      //  client2.afficher();
-     //   client3.afficher();
+
 
         // TP4 - creation de logement via la class Logement :
         Logement logement1;
@@ -34,16 +32,14 @@ public class Main {
         Batiment batiment2;
         Batiment batiment3;
 
-        LocalDate date1 = LocalDate.of(2026,7,15);
-
         Sejour sejour1;
 
+        LocalDate date1 = LocalDate.of(2026,7,15);
+        LocalDate date2 = LocalDate.of(2026,5,15);
 
-
-
-        batiment1 = new Batiment(20, TypeBatiment.IMMEUBLE, ClasseEnergie.B);
-        batiment2 = new Batiment(5,TypeBatiment.COMMERCE,ClasseEnergie.A);
-        batiment3 = new Batiment(10, TypeBatiment.HABITATION, ClasseEnergie.D);
+        batiment1 = new Batiment(1920, ClasseEnergie.B);
+        batiment2 = new Batiment(2005,ClasseEnergie.A);
+        batiment3 = new Batiment(2010, ClasseEnergie.D);
 
 
         logement1 = new Logement("Les Hirondelles", 50, "157 Boulevard de la Liberté, Lille", 70, 5,batiment1, client1);
@@ -52,22 +48,30 @@ public class Main {
 
         sejour1 = new Sejour(date1,3,logement2,5);
 
- // utilisation du setter sur Batiment
-        System.out.println("Test getter " + batiment1.getType());
-        System.out.println("Test getter " + batiment1.getType().getNom());
-        System.out.println("Test getter energie " + batiment1.getClassEnergie());
-        //batiment1.SetAgeBati(17);
+
+
+        // utilisation setter
+
+
+        // Utilisation Methode
+        // client1.afficher();
+        // client2.afficher();
+        // client3.afficher();
         batiment1.afficherBati();
+        // logement1.afficher();
+        // logement2.afficher();
+        // logement3.afficher();
+        // sejour1.afficherSejour();
 
-      //  logement1.afficher();
-      //  logement2.afficher();
-      //  logement3.afficher();
-     //   sejour1.afficherSejour();
 
-
-        // Utilisaton du getter
+        // Utilisaton getter
+        // System.out.println("Test getter " + batiment1.getType());
+        //System.out.println("Test getter " + batiment1.getType().getNom());
+        System.out.println("Test getter energie " + batiment1.getClassEnergie());
         System.out.println("Test getter " + logement3.getNom());
-
+        System.out.println("Test getter hote" + logement1.getHote());
+        System.out.println(("teste getter objet Batiment" + logement1.getBatiment()));
+        System.out.println(( "Batiment construit en " + batiment2.getAnneeConstruction() + " donc il a " + batiment2.ageDuBatiment() + " ans") );
 
 
     }
